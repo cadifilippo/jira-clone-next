@@ -10,14 +10,17 @@ import {
 } from '@mui/material';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { useContext } from 'react';
+import { UIContext } from '../../context/ui/UIContext';
 
 const menuItems: string[] = ['Inbox', 'Starred', 'Sent Mail', 'Drafts'];
 
 export const Sidebar = () => {
+  const { sidemenuOpen } = useContext(UIContext);
   return (
     <Drawer
       anchor="left"
-      open={true}
+      open={sidemenuOpen}
       onClose={() => {
         console.log('close');
       }}
