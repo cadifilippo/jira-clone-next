@@ -12,7 +12,7 @@ const ENTRIES_INITIAL_STATE: EntriesState = {
     {
       _id: uuidv4(),
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+        '[PENDIENTE] Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
       status: 'pending',
       createAt: Date.now(),
     },
@@ -20,14 +20,15 @@ const ENTRIES_INITIAL_STATE: EntriesState = {
     {
       _id: uuidv4(),
       description:
-        'Veniam, quod doloremque quisquam dolorum, quibusdam, quisquam quisquam.',
+        '[TERMINADA] Veniam, quod doloremque quisquam dolorum, quibusdam, quisquam quisquam.',
       status: 'finished',
       createAt: Date.now(),
     },
 
     {
       _id: uuidv4(),
-      description: 'Commodi, quod, quibusdam. Quasi, quisquam, harum!',
+      description:
+        '[PROGRESO] Commodi, quod, quibusdam. Quasi, quisquam, harum!',
       status: 'in-progress',
       createAt: Date.now(),
     },
